@@ -19,12 +19,20 @@ export default function App() {
     <>
       <CssBaseline />
       <AppHeader classes={classes} />
+      <Container maxWidth='xl'>
+        {/* <div className={classes.divBackground}>
+
+        </div> */}
         <Card className={classes.firstCard}>
           <CardMedia
-            className={classes.firstContainer}
+            className={classes.cardMedia}
             image={Image}
-          ></CardMedia>
+          >
+            <Typography variant='h2' className={classes.cardTitle}>Welcome to Pittsburgh Whitening Company!</Typography>
+            <Typography variant='h3' className={classes.cardTitleTwo}>Pittsburgh's premiere mobile teeth whitening service!</Typography>
+          </CardMedia>
         </Card>
+      </Container>
       <Container maxWidth="md">
         <Box my={2}>
           {[...new Array(200)]

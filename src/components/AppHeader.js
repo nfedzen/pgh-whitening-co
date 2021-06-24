@@ -45,7 +45,7 @@ export default function AppHeader(props) {
   return (
     <>
       <ElevationScroll {...props}>
-        <AppBar>
+        <AppBar >
           <Toolbar className={classes.toolbar}>
             <Typography variant="h6">Pittsburgh Whitening Company</Typography>
             <Toolbar>

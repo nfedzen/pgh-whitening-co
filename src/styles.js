@@ -9,12 +9,32 @@ const useStyles = makeStyles((theme) => ({
   buttons: {
     padding: '20px'
   },
-  firstContainer: {
-    height: '120px'
+  cardMedia: {
+    height: '100%',
+    width: '100%',
+    // paddingTop: '40vh',
+    alignItems: 'center',
+    maxWidth: 'lg',
+
   },
   firstCard: {
-    height: '150px',
-    maxWidth:'md'
+    backgroundColor: 'primary',
+    height: '50vh',
+    marginTop: '50px'
+  },
+  cardTitle: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    paddingTop: '25vh',
+    color: 'blue'
+  },
+  cardTitleTwo: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignSelf: 'center',
+    
+    color: 'yellow'
   }
   
 }))
