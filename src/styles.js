@@ -1,5 +1,5 @@
 import {makeStyles} from '@material-ui/core/styles'
-import { findByLabelText } from '@testing-library/dom';
+import Image from './img/logo192.png'
 
 const useStyles = makeStyles((theme) => ({
   toolbar: {
@@ -7,7 +7,14 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between"
   },
   buttons: {
-    color: "#fff"
+    padding: '20px'
+  },
+  firstContainer: {
+    height: '120px'
+  },
+  firstCard: {
+    height: '150px',
+    maxWidth:'md'
   }
   
 }))
