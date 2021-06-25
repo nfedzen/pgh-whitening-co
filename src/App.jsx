@@ -16,13 +16,13 @@ export default function App() {
   const classes = useStyles();
 
   return (
-    <>
+    <div className={classes.main}>
       <CssBaseline />
       <AppHeader classes={classes} />
-      <Container maxWidth='xl'>
-        {/* <div className={classes.divBackground}>
+      {/* <Container maxWidth='xl'>
+        <div className={classes.divBackground}>
 
-        </div> */}
+        </div>
         <Card className={classes.firstCard}>
           <CardMedia
             className={classes.cardMedia}
@@ -32,7 +32,14 @@ export default function App() {
             <Typography variant='h3' className={classes.cardTitleTwo}>Pittsburgh's premiere mobile teeth whitening service!</Typography>
           </CardMedia>
         </Card>
-      </Container>
+      </Container> */}
+
+    <div className={classes.fill}>
+      <img className={classes.topImage} src={Image} alt="" />
+      <Typography variant='h2' className={classes.cardTitle}>Welcome to Pittsburgh Whitening Company!</Typography>
+    </div>
+
+
       <Container maxWidth="md">
         <Box my={2}>
           {[...new Array(200)]
@@ -45,6 +52,6 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`
             .join("\n")}
         </Box>
       </Container>
-    </>
+    </ div>
   );
 }

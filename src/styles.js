@@ -1,10 +1,23 @@
 import {makeStyles} from '@material-ui/core/styles'
 import Image from './img/logo192.png'
 
+const palette = {
+  pinkLav: "#CDB4DB",
+  pinkOrch: "#FFC8DD",
+  pinkNade: "FFAFCC",
+  blueUran: "BDE0FE",
+  blueEyes: "A2D2FF"
+}
+ const pinkNade = "FFAFCC"
+
 const useStyles = makeStyles((theme) => ({
+  main: {
+    backgroundColor: "#FFC8DD"
+  },
   toolbar: {
     display: "flex",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    backgroundColor: '#A2D2FF'
   },
   buttons: {
     padding: '20px'
@@ -27,7 +40,8 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     alignSelf: 'center',
     paddingTop: '25vh',
-    color: 'blue'
+    color: '#A2D2FF',
+    position: 'absolute'
   },
   cardTitleTwo: {
     display: 'flex',
@@ -35,6 +49,19 @@ const useStyles = makeStyles((theme) => ({
     alignSelf: 'center',
     
     color: 'yellow'
+  },
+  fill: {
+    paddingTop: '40px',
+    display: "flex",
+    justifyContent: 'center',
+    alignItems: 'center',
+    overflow: 'hidden'
+  },
+  topImage: {
+    flexShrink: '0',
+    minWidth: '50%',
+    minHeight: '50%',
+    position: 'relative'
   }
   
 }))
