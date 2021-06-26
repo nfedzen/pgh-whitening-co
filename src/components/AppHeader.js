@@ -2,6 +2,7 @@ import React from "react";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import PropTypes from "prop-types";
 import useStyles from '../styles'
+import Image from '../img/pghwhitelogo.png'
 
 import {
   Typography,
@@ -47,7 +48,7 @@ export default function AppHeader(props) {
       <ElevationScroll {...props}>
         <AppBar >
           <Toolbar className={classes.toolbar}>
-            <Typography variant="h6">Pittsburgh Whitening Company</Typography>
+            <img className={classes.logo} src={Image} alt="" />
             <Toolbar>
               <ButtonGroup
                 variant="text"

@@ -14,10 +14,13 @@ const useStyles = makeStyles((theme) => ({
   main: {
     backgroundColor: "#FFC8DD"
   },
+  logo: {
+    maxWidth:'10%'
+  },
   toolbar: {
     display: "flex",
     justifyContent: "space-between",
-    backgroundColor: '#A2D2FF'
+    backgroundColor: '#BDE0FE'
   },
   buttons: {
     padding: '20px'

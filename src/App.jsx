@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import useStyles from "./styles";
 import AppHeader from "./components/AppHeader";
-import Image from "./img/pittsburgh.png";
+import Image from "./img/pghwhiteningco.png";
 
 export default function App() {
   const classes = useStyles();
@@ -36,7 +36,6 @@ export default function App() {
 
     <div className={classes.fill}>
       <img className={classes.topImage} src={Image} alt="" />
-      <Typography variant='h2' className={classes.cardTitle}>Welcome to Pittsburgh Whitening Company!</Typography>
     </div>
 
 
