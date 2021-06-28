@@ -1,19 +1,10 @@
 import React from "react";
 import useScrollTrigger from "@material-ui/core/useScrollTrigger";
 import PropTypes from "prop-types";
-import useStyles from '../styles'
-import Image from '../img/pghwhitelogo.png'
+import useStyles from "../styles";
+import Image from "../img/pghwhitelogo.png";
 
-import {
-  Typography,
-  AppBar,
-  CssBaseline,
-  Toolbar,
-  Container,
-  Box,
-  ButtonGroup,
-  Button,
-} from "@material-ui/core";
+import { AppBar, Toolbar, ButtonGroup, Button } from "@material-ui/core";
 
 function ElevationScroll(props) {
   const { children, window } = props;
@@ -41,12 +32,12 @@ ElevationScroll.propTypes = {
 };
 
 export default function AppHeader(props) {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <>
       <ElevationScroll {...props}>
-        <AppBar >
+        <AppBar>
           <Toolbar className={classes.toolbar}>
             <img className={classes.logo} src={Image} alt="" />
             <Toolbar>

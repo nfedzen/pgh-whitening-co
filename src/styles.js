@@ -1,14 +1,13 @@
 import {makeStyles} from '@material-ui/core/styles'
-import Image from './img/logo192.png'
 
-const palette = {
-  pinkLav: "#CDB4DB",
-  pinkOrch: "#FFC8DD",
-  pinkNade: "FFAFCC",
-  blueUran: "BDE0FE",
-  blueEyes: "A2D2FF"
-}
- const pinkNade = "FFAFCC"
+// const palette = {
+//   pinkLav: "#CDB4DB",
+//   pinkOrch: "#FFC8DD",
+//   pinkNade: "FFAFCC",
+//   blueUran: "BDE0FE",
+//   blueEyes: "A2D2FF"
+// }
+
 
 const useStyles = makeStyles((theme) => ({
   main: {
@@ -62,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
   },
   topImage: {
     flexShrink: '0',
-    minWidth: '50%',
+    minWidth: '100%',
     minHeight: '50%',
     position: 'relative'
   }
